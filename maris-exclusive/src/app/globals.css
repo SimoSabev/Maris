@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* ─── Brand design tokens ─────────────────────────────────────────────────── */
+:root {
+  /* Core palette */
+  --background:   #FAF8F4;
+  --foreground:   #14110E;
+  --surface:      #EDE7DD;
+  --accent:       #9C8C78;
+  --accent-ink:   #6F614F;
+  --muted-fg:     #6B655C;
+  --border:       #E2DACE;
+
+  /* shadcn/ui variable mapping */
+  --card:             var(--background);
+  --card-foreground:  var(--foreground);
+  --popover:          var(--background);
+  --popover-foreground: var(--foreground);
+  --primary:          var(--foreground);
+  --primary-foreground: var(--background);
+  --secondary:        var(--surface);
+  --secondary-foreground: var(--foreground);
+  --muted:            var(--surface);
+  --muted-foreground: var(--muted-fg);
+  --accent-color:     var(--surface);
+  --accent-foreground: var(--foreground);
+  --destructive:      #b91c1c;
+  --destructive-foreground: #FAF8F4;
+  --ring:             var(--accent);
+  --input:            var(--border);
+  --radius:           0.25rem;
+
+  /* Typography CSS variables */
+  --font-display: var(--font-cormorant);
+  --font-sans:    var(--font-jost);
+}
+
+/* ─── Tailwind v4 theme extension ─────────────────────────────────────────── */
+@theme inline {
+  --color-background:  var(--background);
+  --color-foreground:  var(--foreground);
+  --color-surface:     var(--surface);
+  --color-accent:      var(--accent);
+  --color-accent-ink:  var(--accent-ink);
+  --color-muted-fg:    var(--muted-fg);
+  --color-border:      var(--border);
+
+  --font-display: var(--font-cormorant);
+  --font-sans:    var(--font-jost);
+
+  --tracking-widest-nav: 0.18em;
+}
+
+/* ─── Base styles ─────────────────────────────────────────────────────────── */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Disable dark mode entirely */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:   #FAF8F4;
+    --foreground:   #14110E;
+    --surface:      #EDE7DD;
+    --accent:       #9C8C78;
+    --accent-ink:   #6F614F;
+    --muted-fg:     #6B655C;
+    --border:       #E2DACE;
+  }
+}
+
+/* ─── Typography utilities ────────────────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display), 'Georgia', serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Nav eyebrow label style */
+.nav-label {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: 400;
+}
+
+/* Hairline border */
+.hairline {
+  border-color: var(--border);
+}
+
+/* Animated underline for nav links */
+.nav-link-underline {
+  position: relative;
+}
+
+.nav-link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link-underline:hover::after {
+  width: 100%;
+}
+
+/* Focus rings */
+*:focus-visible {
+  outline: 1.5px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Smooth in-page navigation with offset for the sticky header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
