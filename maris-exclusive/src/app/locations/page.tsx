@@ -26,37 +26,37 @@ const DESTINATIONS: Destination[] = [
     id: "monaco",
     name: "Monaco & French Riviera",
     editorial:
-      "The Côte d'Azur remains the enduring archetype of Mediterranean luxury — a seamless blend of clifftop estates, protected harbours, and the discreet society that orbits them. Monaco's compact principality concentrates extraordinary wealth and yachting heritage in a single harbour, while the broader Riviera stretches from Menton to Saint-Tropez through some of Europe's most coveted coastal addresses. We maintain longstanding relationships across this corridor and access properties that rarely, if ever, reach the open market.",
+      "It's been our home base for the past 20 years, allowing us to build a reliable network of contacts in real estate, yachting and interiors.",
   },
   {
     id: "italy",
     name: "Italy",
     editorial:
-      "Italy's diversity of landscape and architectural heritage makes it one of the world's most compelling property markets. From the terraced lemon groves of the Amalfi Coast and the azure panoramas of Sardinia's Costa Smeralda to Tuscan estates hidden behind cypress alleys and Venetian palazzi on the Grand Canal, each acquisition here carries genuine cultural depth. Our network spans the finest coastal, hillside, and historic-centre addresses, connecting motivated sellers with discerning international buyers.",
+      "The proximity of Italy to Monaco and mastering the Italian language have permitted us to create strong ties with real estate and yachting partners, along with multiple collaborations with interior companies.",
   },
   {
     id: "greece",
     name: "Greece",
     editorial:
-      "Greece has emerged as one of the defining luxury markets of this decade. The Cyclades — Mykonos, Santorini, Paros — draw a global clientele seeking whitewashed architecture suspended above cobalt water, while Athens' historic neighbourhoods and the Peloponnese coastline offer a quieter, equally refined alternative. The Greek sailing season provides a natural anchor for yacht charter and acquisition enquiries, and our base between Monaco and Athens places us at the intersection of both worlds.",
+      "The natural beauty and the growing business opportunities in Greece have encouraged us to set base also in this region. With focus on real estate developments, seasonal rentals and yacht charters, we felt the urge to be closer to our clients and partners here.",
   },
   {
     id: "middle-east",
     name: "Middle East",
     editorial:
-      "The Gulf region represents one of the most significant concentrations of ultra-high-net-worth residential demand globally. Dubai's Palm Jumeirah and Jumeirah Bay Island offer landmark residences with direct marina access; Abu Dhabi and Qatar are developing their own prime residential and cultural quarters at pace. For clients seeking scale, privacy, and architectural grandeur — alongside a stable regulatory environment — the Middle East presents opportunities distinct from any European market.",
+      "Having spent a significant time in Dubai, we have developed successful partnerships with local real estate, yachting and interior design companies.",
   },
   {
     id: "london",
     name: "London",
     editorial:
-      "London remains the pre-eminent global city for prime residential property — a deep, liquid market anchored by centuries of legal and financial infrastructure. Belgravia, Mayfair, Knightsbridge, and the wider South Kensington corridor attract an international ownership profile, while the City fringe and riverside neighbourhoods continue to evolve as architectural destinations in their own right. Our London relationships cover both acquisition and discreet off-market introductions, with particular expertise in staging and interior repositioning prior to sale.",
+      "Having successfully closed multiple real estate transactions in the heart of London, we have benefitted from strong partnerships with direct owners and facilitators.",
   },
   {
     id: "spain",
     name: "Spain",
     editorial:
-      "Spain's golden triangle — Marbella, Ibiza, and Mallorca — has solidified its position as the Mediterranean's most versatile luxury market. Marbella's Golden Mile and the sierra hillsides of La Zagaleta attract year-round international buyers; Ibiza balances architectural creativity with cultural cachet; Mallorca offers expansive estates within a short flight of the major European capitals. Spain also provides a compelling backdrop for yacht charter, with the Balearics ranking among the finest sailing grounds in European waters.",
+      "Mallorca, Marbella, Ibiza — we have established collaborations with local partners in those three main locations, with one of our team members based in Palma and fluent in Spanish.",
   },
 ];
 

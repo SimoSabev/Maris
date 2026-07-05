@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { OfferList } from "@/components/site/OfferList";
-import { ListingGrid } from "@/components/site/ListingGrid";
 import { ContactCtaBand } from "@/components/site/ContactCtaBand";
-import { listings, listingMeta } from "@/lib/listings";
 
 // ─── Metadata ──────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
   title: "Properties for Sale — Maris Exclusive",
   description:
-    "Curated selection of signature villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and a global network of buyers to achieve the best outcome for all parties involved.",
+    "An off-market, request-led acquisition service for signature villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and a global network of buyers to achieve the best outcome for all parties involved.",
 };
 
 // ─── Offer points ──────────────────────────────────────────────────────────
@@ -39,19 +39,11 @@ const OFFER_ITEMS = [
 // ─── Page ──────────────────────────────────────────────────────────────────
 
 export default function PropertiesForSalePage() {
-  const gridItems = listings.map((l) => ({
-    image: l.hero,
-    alt: l.name,
-    title: l.name,
-    meta: listingMeta(l),
-    href: `/properties/${l.slug}`,
-  }));
-
   return (
     <main>
-      {/* Hero — owned Villa Celeste image */}
+      {/* Hero — non-specific, evocative image (no identifiable listing) */}
       <PageHero
-        image="/images/properties/chalet-nordea-pool.jpg"
+        image="/images/yacht-interior-dusk.png"
         alt="Maris Exclusive — Properties for Sale"
         eyebrow="Real Estate · For Sale"
         title="Properties for Sale"
@@ -91,26 +83,67 @@ export default function PropertiesForSalePage() {
         <OfferList items={OFFER_ITEMS} />
       </Section>
 
-      {/* All 5 listings grid */}
-      <Section eyebrow="Current Properties" title="The Collection" id="listings">
-        <ListingGrid
-          items={gridItems}
-          note="Selected representation · enquire for the full off-market portfolio"
-        />
-      </Section>
-
-      {/* Private portfolio note */}
-      <Section surface eyebrow="Beyond the Collection" id="portfolio">
-        <div className="max-w-2xl">
+      {/* Acquisitions Shared on Request — no public listings; most inventory is off-market */}
+      <Section eyebrow="The Portfolio" id="portfolio">
+        <div className="max-w-3xl">
           <Reveal>
+            <h2
+              className="font-display text-[var(--foreground)] leading-[1.1] mb-8"
+              style={{
+                fontSize: "clamp(1.8rem, 3vw, 3.2rem)",
+                fontWeight: 400,
+                letterSpacing: "-0.015em",
+              }}
+            >
+              Shared Privately, on Request
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="w-10 h-px bg-[var(--accent)] mb-8" aria-hidden="true" />
+          </Reveal>
+
+          <Reveal delay={0.16}>
             <p
-              className="text-[var(--muted-fg)] font-light leading-relaxed"
+              className="text-[var(--muted-fg)] font-light leading-relaxed mb-6"
               style={{ fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)" }}
             >
-              The wider collection — spanning villas, estates and chalets not yet
-              published — is shared discreetly on enquiry, introduced only to
-              clients whose requirements align precisely.
+              The great majority of our sales inventory — villas, estates,
+              apartments and chalets across the Riviera, the Alps, Greece and
+              beyond — is off-market and never published. Confidentiality is
+              part of the value we offer both sellers and buyers.
             </p>
+          </Reveal>
+
+          <Reveal delay={0.22}>
+            <p
+              className="text-[var(--muted-fg)] font-light leading-relaxed mb-10"
+              style={{ fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)" }}
+            >
+              Tell us what you are seeking — the location, the scale, the
+              character of the property — and we will introduce a shortlist
+              matched precisely to your brief, in complete discretion.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.28}>
+            <Link
+              href="/contact"
+              className="group inline-flex items-center gap-3 nav-label text-[var(--accent-ink)] text-[0.6rem] hover:text-[var(--foreground)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm cursor-pointer w-fit"
+            >
+              <span className="relative">
+                Begin an Acquisition Enquiry
+                <span
+                  className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
+                  aria-hidden="true"
+                />
+              </span>
+              <ArrowRight
+                size={12}
+                strokeWidth={1.5}
+                className="translate-x-0 group-hover:translate-x-1 transition-transform duration-200"
+              />
+            </Link>
           </Reveal>
         </div>
       </Section>

@@ -27,8 +27,8 @@ export function InteriorSection() {
               transition={{ duration: 0.7, ease: "easeOut" as const }}
             >
               <Image
-                src="/images/yacht-interior-dusk.png"
-                alt="Refined yacht interior at dusk — warm amber light"
+                src="/images/properties/villa-metis-living.jpg"
+                alt="Villa Metis beamed living room with Aegean views"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"

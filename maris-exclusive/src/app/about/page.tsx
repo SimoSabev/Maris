@@ -17,8 +17,8 @@ export default function AboutPage() {
   return (
     <main>
       <PageHero
-        image="/images/hero-yacht-profile.jpg"
-        alt="Luxury yacht profile on open water — the sea is central to everything Maris does"
+        image="/images/properties/villa-celeste-hero.jpg"
+        alt="Villa Celeste — waterfront luxury villa in Mykonos"
         eyebrow="About"
         title="A Private Advisory House"
         subtitle="Rooted in two disciplines — the art of acquisition and the craft of interiors."

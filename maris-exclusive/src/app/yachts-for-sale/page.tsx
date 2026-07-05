@@ -75,8 +75,8 @@ export default function YachtsForSalePage() {
     <main>
         {/* ── Hero ── */}
         <PageHero
-          image="/images/hero-yacht-profile.jpg"
-          alt="Luxury motor yacht profile in open sea"
+          image="/images/champagne-caviar-profile.jpg"
+          alt="Champagne & Caviar — luxury motor yacht at anchor off the Riviera coast"
           eyebrow="Yachting · For Sale"
           title="Yachts for Sale"
           subtitle="A refined portfolio of luxury yachts and superyachts, expertly curated for discerning buyers."

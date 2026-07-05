@@ -5,7 +5,9 @@ import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
 import { OfferList } from "@/components/site/OfferList";
+import { ListingGrid } from "@/components/site/ListingGrid";
 import { ContactCtaBand } from "@/components/site/ContactCtaBand";
+import { listings, listingMeta } from "@/lib/listings";
 
 // ─── Metadata ──────────────────────────────────────────────────────────────
 
@@ -39,6 +41,14 @@ const OFFER_ITEMS = [
 // ─── Page ──────────────────────────────────────────────────────────────────
 
 export default function PropertiesForRentPage() {
+  const gridItems = listings.map((l) => ({
+    image: l.hero,
+    alt: l.name,
+    title: l.name,
+    meta: listingMeta(l),
+    href: `/properties/${l.slug}`,
+  }));
+
   return (
     <main>
       {/* Hero — Villa Elysia hero (summer-rental feel) */}
@@ -81,52 +91,31 @@ export default function PropertiesForRentPage() {
         <OfferList items={OFFER_ITEMS} />
       </Section>
 
-      {/* Rentals Curated on Request — editorial block replacing fabricated listings */}
-      <Section eyebrow="The Rental Portfolio" id="portfolio">
-        <div className="max-w-3xl">
+      {/* Current rental collection */}
+      <Section eyebrow="Current Properties" title="The Collection" id="listings">
+        <ListingGrid
+          items={gridItems}
+          note="Selected representation · enquire for full rental availability"
+        />
+      </Section>
+
+      {/* Beyond the published collection */}
+      <Section surface eyebrow="Beyond the Collection" id="portfolio">
+        <div className="max-w-2xl">
           <Reveal>
-            <h2
-              className="font-display text-[var(--foreground)] leading-[1.1] mb-8"
-              style={{
-                fontSize: "clamp(1.8rem, 3vw, 3.2rem)",
-                fontWeight: 400,
-                letterSpacing: "-0.015em",
-              }}
-            >
-              Rentals Curated on Request
-            </h2>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <div className="w-10 h-px bg-[var(--accent)] mb-8" aria-hidden="true" />
-          </Reveal>
-
-          <Reveal delay={0.16}>
             <p
               className="text-[var(--muted-fg)] font-light leading-relaxed mb-6"
               style={{ fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)" }}
             >
-              Our rental portfolio — spanning the French Riviera, Greece, Italy,
-              Spain, and the Middle East — is presented exclusively on enquiry.
-              Short-term and long-term options alike are selected personally, held
-              to the same standard as our sales portfolio, and introduced only to
-              clients whose preferences and timing we understand.
+              Our wider rental portfolio — spanning the French Riviera, Greece,
+              Italy, Spain, and the Middle East — is presented on enquiry.
+              Short-term and long-term options alike are selected personally
+              and introduced only to clients whose preferences and timing we
+              understand.
             </p>
           </Reveal>
 
-          <Reveal delay={0.22}>
-            <p
-              className="text-[var(--muted-fg)] font-light leading-relaxed mb-10"
-              style={{ fontSize: "clamp(0.9rem, 1.05vw, 1.05rem)" }}
-            >
-              Tell us where and when you wish to be — the coastline, the city,
-              the mountain — and we will present a thoughtful shortlist. There
-              is no generic listing board here. There is only a conversation,
-              and what follows from it.
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.28}>
+          <Reveal delay={0.1}>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-3 nav-label text-[var(--accent-ink)] text-[0.6rem] hover:text-[var(--foreground)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm cursor-pointer w-fit"

@@ -101,7 +101,7 @@ export default async function ListingPage({
       <PageHero
         image={l.hero}
         alt={`${l.name} — ${l.tagline}`}
-        eyebrow={`Properties for Sale · ${l.region}`}
+        eyebrow={`Properties for Rent · ${l.region}`}
         title={l.name}
         subtitle={`${l.location} · ${l.tagline}`}
       />
@@ -171,7 +171,7 @@ export default async function ListingPage({
 
           <Reveal delay={0.25}>
             <Link
-              href="/properties-for-sale"
+              href="/properties-for-rent"
               className="group inline-flex items-center gap-2 nav-label text-[var(--accent-ink)] text-[0.6rem] hover:text-[var(--foreground)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm cursor-pointer"
             >
               <span
@@ -182,7 +182,7 @@ export default async function ListingPage({
                   className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
                   aria-hidden="true"
                 />
-                ← BACK TO PROPERTIES FOR SALE
+                ← BACK TO PROPERTIES FOR RENT
               </span>
             </Link>
           </Reveal>
@@ -261,7 +261,7 @@ export default async function ListingPage({
       {/* ── CTA ─────────────────────────────────────────────────────────── */}
       <ContactCtaBand
         title="Arrange a Private Viewing"
-        body={`${l.name} is available for discreet private viewings by appointment. Contact our advisors to discuss the property, availability, and acquisition in complete confidence.`}
+        body={`${l.name} is available for discreet private viewings by appointment. Contact our advisors to discuss the property, availability, and rental terms in complete confidence.`}
       />
     </main>
   );

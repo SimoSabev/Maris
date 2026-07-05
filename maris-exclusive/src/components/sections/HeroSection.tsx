@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "motion/react";
 import { ArrowDown } from "lucide-react";
 
 // ─── HeroSection ───────────────────────────────────────────────────────────
-// Full-bleed hero with yacht profile image, gradient scrim, staggered reveal.
+// Full-bleed hero with villa image, gradient scrim, staggered reveal.
 
 export function HeroSection() {
   const shouldReduceMotion = useReducedMotion();
@@ -28,8 +28,8 @@ export function HeroSection() {
     >
       {/* Full-bleed image */}
       <Image
-        src="/images/hero-yacht-profile.jpg"
-        alt="Luxury yacht profile on open water"
+        src="/images/properties/villa-metis-pool.jpg"
+        alt="Villa Metis — cliff-edge infinity pool over the Aegean"
         fill
         sizes="100vw"
         priority

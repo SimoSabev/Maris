@@ -21,10 +21,10 @@ const SERVICES: Service[] = [
   {
     title: "Properties for Sale",
     description:
-      "Curated selection of signature villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and yachts, and to a global network of clients, sellers and buyers to achieve the best outcome for all parties involved.",
+      "An off-market, request-led acquisition service for villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and to a global network of buyers and sellers, introduced privately and matched precisely to each brief.",
     href: "/properties-for-sale",
-    image: "/images/properties/villa-celeste-hero.jpg",
-    alt: "Villa Celeste — waterfront luxury villa in Mykonos",
+    image: "/images/properties/chalet-crystal-bar.jpg",
+    alt: "Chalet Crystal bar and wine cave",
   },
   {
     title: "Properties for Rent",
@@ -39,8 +39,8 @@ const SERVICES: Service[] = [
     description:
       "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition.",
     href: "/yachts-for-sale",
-    image: "/images/hero-yacht-profile.jpg",
-    alt: "Luxury yacht profile on open water",
+    image: "/images/champagne-caviar-profile.jpg",
+    alt: "Champagne & Caviar — luxury motor yacht at anchor off the Riviera coast",
   },
   {
     title: "Yachts for Charter",
@@ -55,8 +55,8 @@ const SERVICES: Service[] = [
     description:
       "Turnkey interior design, renovation and staging services which enhance the value of the asset and accelerate sales — tailored to the specific property and yacht, from concept to completion.",
     href: "/interior-design",
-    image: "/images/properties/chalet-nordea-bathroom.jpg",
-    alt: "Chalet Nordéa refined bathroom with alpine spa finishes",
+    image: "/images/properties/chalet-crystal-spa.jpg",
+    alt: "Chalet Crystal private spa with infinity pool",
   },
 ];
 
