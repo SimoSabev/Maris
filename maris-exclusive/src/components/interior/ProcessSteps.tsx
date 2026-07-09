@@ -84,7 +84,7 @@ export function ProcessSteps() {
 
         {/* Steps */}
         <ol
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-[var(--border)]"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 md:gap-x-10 lg:gap-x-0 border-t border-[var(--border)]"
           aria-label="Design process phases"
           role="list"
         >

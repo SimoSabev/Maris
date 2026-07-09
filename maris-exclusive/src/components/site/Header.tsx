@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -69,16 +70,17 @@ export function Header() {
             className="flex-shrink-0 group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)]"
             aria-label="Maris Exclusive — home"
           >
-            <span
+            <Image
+              src={scrolled ? "/images/brand/maris-logo-dark.png" : "/images/brand/maris-logo-white.png"}
+              alt="Maris Exclusive"
+              width={140}
+              height={93}
+              priority
               className={[
-                "font-sans text-[0.65rem] tracking-[0.28em] uppercase font-400 transition-colors duration-200",
-                scrolled
-                  ? "text-[var(--foreground)]"
-                  : "text-white drop-shadow-sm",
+                "h-9 lg:h-10 w-auto transition-opacity duration-200",
+                scrolled ? "" : "drop-shadow-sm",
               ].join(" ")}
-            >
-              Maris Exclusive
-            </span>
+            />
           </Link>
 
           {/* Desktop nav */}

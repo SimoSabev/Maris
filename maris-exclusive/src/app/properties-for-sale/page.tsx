@@ -41,10 +41,10 @@ const OFFER_ITEMS = [
 export default function PropertiesForSalePage() {
   return (
     <main>
-      {/* Hero — non-specific, evocative image (no identifiable listing) */}
+      {/* Hero */}
       <PageHero
-        image="/images/yacht-interior-dusk.png"
-        alt="Maris Exclusive — Properties for Sale"
+        image="/images/properties/villa-alcyone-terrace.jpg"
+        alt="Villa Alcyone — Cap Ferrat terrace overlooking the French Riviera"
         eyebrow="Real Estate · For Sale"
         title="Properties for Sale"
       />

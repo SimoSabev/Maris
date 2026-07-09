@@ -71,6 +71,24 @@ const PORTFOLIO_ITEMS = [
     title: "Chalet Nordéa — Master Suite",
     meta: "Residence · Courchevel 1850",
   },
+  {
+    image: "/images/properties/le-renzo-dining.jpg",
+    alt: "Le Renzo dining room styled with sculptural pink glassware",
+    title: "Le Renzo — Dining",
+    meta: "Residence · Monaco",
+  },
+  {
+    image: "/images/properties/le-renzo-styling.jpg",
+    alt: "Le Renzo living room styling with floral arrangement and travertine table",
+    title: "Le Renzo — Styling",
+    meta: "Residence · Monaco",
+  },
+  {
+    image: "/images/properties/le-renzo-materials.jpg",
+    alt: "Fabric and material selection for the Le Renzo interior scheme",
+    title: "Le Renzo — Material Selection",
+    meta: "Residence · Monaco",
+  },
 ];
 
 export default function InteriorDesignPage() {
