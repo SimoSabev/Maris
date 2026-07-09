@@ -26,3 +26,9 @@ Thumbs.db
 # Raw reference material (brochures, raw camera files, videos) -
 # not needed in git history, too large for GitHub's 100MB file limit
 docs/references/Maris_Output/
+
+# Raw per-page PDF image extractions (scratch material) - only the
+# specific images copied into maris-exclusive/public/images/ are used
+web-assets/gallery-yachts-cosmico/
+web-assets/gallery-yachts-deepblue/
+web-assets/gallery-yachts-cappuccino/
