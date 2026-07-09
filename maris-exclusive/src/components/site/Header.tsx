@@ -67,13 +67,12 @@ export function Header() {
           {/* Wordmark */}
           <Link
             href="/"
-            className="flex-shrink-0 group flex items-center gap-2.5 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)]"
+            className="flex-shrink-0 group flex items-center focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)]"
             aria-label="Maris Exclusive — home"
           >
             <Image
               src={scrolled ? "/images/brand/maris-icon-dark.png" : "/images/brand/maris-icon-white.png"}
-              alt=""
-              aria-hidden="true"
+              alt="Maris Exclusive"
               width={140}
               height={67}
               priority
@@ -82,16 +81,6 @@ export function Header() {
                 scrolled ? "" : "drop-shadow-sm",
               ].join(" ")}
             />
-            <span
-              className={[
-                "font-sans text-[0.65rem] tracking-[0.28em] uppercase font-400 transition-colors duration-200",
-                scrolled
-                  ? "text-[var(--foreground)]"
-                  : "text-white drop-shadow-sm",
-              ].join(" ")}
-            >
-              Maris Exclusive
-            </span>
           </Link>
 
           {/* Desktop nav */}
