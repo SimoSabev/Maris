@@ -33,10 +33,16 @@ const offerItems = [
 
 const listingItems = [
   {
-    image: "/images/hero-yacht-profile.jpg",
-    alt: "Motor yacht profile at sea",
-    title: "Deep Blue — 42m Motor Yacht",
-    meta: "42m · Motor Yacht · 2020 · On request",
+    image: "/images/cosmico-profile.jpg",
+    alt: "Cosmico motor yacht profile at sea",
+    title: "Cosmico — 40.8m Motor Yacht",
+    meta: "40.8m · Motor Yacht · 2024 · On request",
+  },
+  {
+    image: "/images/deepblue-profile.jpg",
+    alt: "Deep Blue motor yacht at anchor",
+    title: "Deep Blue — 55m Motor Yacht",
+    meta: "55m · Motor Yacht · 2014 · On request",
   },
   {
     image: "/images/yacht-aerial-profile.png",
@@ -45,8 +51,8 @@ const listingItems = [
     meta: "55m · Superyacht · 2018 · On request",
   },
   {
-    image: "/images/Cappucino-ryi-1.png",
-    alt: "Cappucino yacht profile",
+    image: "/images/Cappucino-ryi-6.png",
+    alt: "Cappucino yacht profile along the coast",
     title: "Cappucino — 38m Motor Yacht",
     meta: "38m · Motor Yacht · 2019 · On request",
   },

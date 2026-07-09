@@ -7,7 +7,7 @@ import { motion, useReducedMotion } from "motion/react";
 // Three key figures on a hairline grid.
 
 const STATS = [
-  { value: "15+", label: "Years of Expertise" },
+  { value: "20+", label: "Years of Expertise" },
   { value: "€1B+", label: "In Transactions" },
   { value: "Monaco · Greece", label: "Our Bases" },
 ];

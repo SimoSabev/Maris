@@ -23,7 +23,7 @@ const LOCATIONS: Location[] = [
     name: "Monaco & French Riviera",
     href: "/locations#monaco",
     descriptor:
-      "The enduring apex of Mediterranean luxury — clifftop estates, protected harbours, and the discreet society that orbits them.",
+      "It's been our home base for the past 20 years, allowing us to build a reliable network of contacts in real estate, yachting and interiors.",
   },
   {
     number: "02",

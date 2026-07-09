@@ -53,7 +53,7 @@ export default function AboutPage() {
                 style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)" }}
               >
                 Maris Exclusive is a private advisory practice founded by two specialists with more
-                than fifteen years of combined experience across Europe and the Middle East. The name
+                than twenty years of combined experience across Europe and the Middle East. The name
                 comes from the Latin <em>maris</em> — &ldquo;of the sea&rdquo; — a quiet acknowledgement
                 of the Mediterranean world in which we live and work.
               </p>
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 className="text-[var(--muted-fg)] font-light leading-relaxed"
                 style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)" }}
               >
-                Over €1 billion in transactions is the result of fifteen years of introductions made with
+                Over €1 billion in transactions is the result of twenty years of introductions made with
                 care, of trust maintained across generations of clients, and of an access to off-market
                 properties and yachts that no listings platform can replicate. We do not advertise inventory.
                 We present possibilities — selectively, and always in confidence.

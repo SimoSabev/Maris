@@ -6,7 +6,7 @@ import { motion, useReducedMotion } from "motion/react";
 // Editorial manifesto with generous whitespace, thin rule, and quiet stats.
 
 const STATS = [
-  { value: "15+", label: "Years of Expertise" },
+  { value: "20+", label: "Years of Expertise" },
   { value: "€1B+", label: "In Transactions" },
   { value: "Monaco · Greece", label: "Our Bases" },
 ];
@@ -66,10 +66,10 @@ export function IntroSection() {
             className="text-[var(--muted-fg)] leading-relaxed font-light"
             style={{ fontSize: "clamp(0.95rem, 1.1vw, 1.05rem)" }}
           >
-            Founded by two specialists with more than fifteen years of combined experience, Maris Exclusive operates
-            at the intersection of real estate, yachting and interior design. Based between Monaco and Greece, we
-            maintain discreet access to off-market properties and exceptional vessels across Europe and the Middle East.
-            We are not a listings portal — we are a curator, acting in confidence for clients who expect nothing ordinary.
+            Founded by two highly specialised professionals with more than twenty years of combined experience, Maris
+            Exclusive operates at the intersection of real estate, yachting and interior design. Based between Monaco
+            and Greece, we maintain discreet access to off-market properties and exceptional yachts across Europe and
+            the Middle East.
           </motion.p>
         </div>
 

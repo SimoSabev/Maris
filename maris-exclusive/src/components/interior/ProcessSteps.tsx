@@ -92,8 +92,9 @@ export function ProcessSteps() {
             <motion.li
               key={step.number}
               {...fadeUp(0.08 + index * 0.1)}
-              className="border-b border-[var(--border)] lg:border-b-0 lg:border-r last:border-r-0 border-[var(--border)] pt-10 pb-12 pr-0 lg:pr-10 lg:pl-0 pl-0 list-none"
-              style={{ paddingLeft: index > 0 ? undefined : 0 }}
+              className={`border-b border-[var(--border)] lg:border-b-0 lg:border-r last:border-r-0 border-[var(--border)] pt-10 pb-12 pr-0 lg:pr-10 pl-0 ${
+                index > 0 ? "lg:pl-10" : "lg:pl-0"
+              } list-none`}
             >
               {/* Step number */}
               <p className="nav-label text-[var(--accent)] text-[0.58rem] mb-5">

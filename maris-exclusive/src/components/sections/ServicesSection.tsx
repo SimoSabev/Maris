@@ -23,8 +23,8 @@ const SERVICES: Service[] = [
     description:
       "An off-market, request-led acquisition service for villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and to a global network of buyers and sellers, introduced privately and matched precisely to each brief.",
     href: "/properties-for-sale",
-    image: "/images/properties/chalet-crystal-bar.jpg",
-    alt: "Chalet Crystal bar and wine cave",
+    image: "/images/properties/chalet-crystal-spa.jpg",
+    alt: "Chalet Crystal private spa with infinity pool",
   },
   {
     title: "Properties for Rent",
@@ -39,8 +39,8 @@ const SERVICES: Service[] = [
     description:
       "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition.",
     href: "/yachts-for-sale",
-    image: "/images/champagne-caviar-profile.jpg",
-    alt: "Champagne & Caviar — luxury motor yacht at anchor off the Riviera coast",
+    image: "/images/deepblue-aerial.jpg",
+    alt: "Deep Blue superyacht cruising off a tropical coastline",
   },
   {
     title: "Yachts for Charter",
@@ -55,8 +55,8 @@ const SERVICES: Service[] = [
     description:
       "Turnkey interior design, renovation and staging services which enhance the value of the asset and accelerate sales — tailored to the specific property and yacht, from concept to completion.",
     href: "/interior-design",
-    image: "/images/properties/chalet-crystal-spa.jpg",
-    alt: "Chalet Crystal private spa with infinity pool",
+    image: "/images/properties/chalet-crystal-mezzanine.jpg",
+    alt: "Chalet Crystal mezzanine living room with fireplace",
   },
 ];
 
