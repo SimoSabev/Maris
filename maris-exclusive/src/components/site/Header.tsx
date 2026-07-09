@@ -73,8 +73,8 @@ export function Header() {
             <Image
               src={scrolled ? "/images/brand/maris-icon-dark.png" : "/images/brand/maris-icon-white.png"}
               alt="Maris Exclusive"
-              width={140}
-              height={67}
+              width={150}
+              height={60}
               priority
               className={[
                 "h-[72px] lg:h-[84px] w-auto transition-opacity duration-200",
