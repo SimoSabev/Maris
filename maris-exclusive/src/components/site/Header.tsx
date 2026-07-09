@@ -78,7 +78,7 @@ export function Header() {
               height={67}
               priority
               className={[
-                "h-6 lg:h-7 w-auto transition-opacity duration-200",
+                "h-[72px] lg:h-[84px] w-auto transition-opacity duration-200",
                 scrolled ? "" : "drop-shadow-sm",
               ].join(" ")}
             />
