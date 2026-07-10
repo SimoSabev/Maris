@@ -74,20 +74,20 @@ const PORTFOLIO_ITEMS = [
   {
     image: "/images/properties/le-renzo-dining.jpg",
     alt: "Villa Alcyone dining room styled with sculptural pink glassware",
-    title: "Villa Alcyone",
-    meta: "France",
+    title: "Villa Alcyone - Main Saloon",
+    meta: "Cap Ferrat, France",
   },
   {
     image: "/images/properties/le-renzo-styling.jpg",
-    alt: "Villa Alcyone living room styling with floral arrangement and travertine table",
-    title: "Villa Alcyone",
-    meta: "France",
+    alt: "Residence Le Renzo living room styling with floral arrangement and travertine table",
+    title: "Le Renzo - Main Saloon",
+    meta: "Mareterra, Monaco",
   },
   {
-    image: "/images/properties/le-renzo-materials.jpg",
-    alt: "Fabric and material selection for the Villa Alcyone interior scheme",
-    title: "Villa Alcyone",
-    meta: "France",
+    image: "/images/yacht-saloon-lounge.jpg",
+    alt: "Motor yacht saloon lounge with fresh floral arrangement",
+    title: "Ilumen 28 - Main Saloon",
+    meta: "Dominator Yachts",
   },
 ];
 
