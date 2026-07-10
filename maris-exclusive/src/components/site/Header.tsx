@@ -71,13 +71,13 @@ export function Header() {
             aria-label="Maris Exclusive — home"
           >
             <Image
-              src={scrolled ? "/images/brand/maris-icon-dark.png" : "/images/brand/maris-icon-white.png"}
+              src={scrolled ? "/images/brand/maris-logo-dark.png" : "/images/brand/maris-logo-white.png"}
               alt="Maris Exclusive"
               width={150}
-              height={60}
+              height={100}
               priority
               className={[
-                "h-[72px] lg:h-[84px] w-auto transition-opacity duration-200",
+                "h-[64px] lg:h-[76px] w-auto transition-opacity duration-200",
                 scrolled ? "" : "drop-shadow-sm",
               ].join(" ")}
             />
