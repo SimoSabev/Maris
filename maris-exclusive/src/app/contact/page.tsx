@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
@@ -89,7 +89,7 @@ export default function ContactPage() {
                     Email
                   </p>
                   <a
-                    href="mailto:enquiries@marisexclusive.com"
+                    href="mailto:sales@marisexclusive.com"
                     className="group inline-flex items-center gap-2 text-[var(--foreground)] font-light hover:text-[var(--accent-ink)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm"
                     style={{ fontSize: "clamp(0.875rem, 0.95vw, 0.95rem)" }}
                   >
@@ -100,13 +100,60 @@ export default function ContactPage() {
                       aria-hidden="true"
                     />
                     <span className="relative">
-                      enquiries@marisexclusive.com
+                      sales@marisexclusive.com
                       <span
                         className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
                         aria-hidden="true"
                       />
                     </span>
                   </a>
+                </div>
+
+                {/* Phone */}
+                <div>
+                  <p className="nav-label text-[var(--accent)] text-[0.58rem] mb-2">
+                    Phone
+                  </p>
+                  <div className="flex flex-col gap-1.5">
+                    <a
+                      href="tel:+306949661859"
+                      className="group inline-flex items-center gap-2 text-[var(--foreground)] font-light hover:text-[var(--accent-ink)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm"
+                      style={{ fontSize: "clamp(0.875rem, 0.95vw, 0.95rem)" }}
+                    >
+                      <Phone
+                        size={13}
+                        strokeWidth={1.5}
+                        className="text-[var(--accent)] flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span className="relative">
+                        +30 694 966 1859
+                        <span
+                          className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </a>
+                    <a
+                      href="tel:+33660051391"
+                      className="group inline-flex items-center gap-2 text-[var(--foreground)] font-light hover:text-[var(--accent-ink)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm"
+                      style={{ fontSize: "clamp(0.875rem, 0.95vw, 0.95rem)" }}
+                    >
+                      <Phone
+                        size={13}
+                        strokeWidth={1.5}
+                        className="text-[var(--accent)] flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span className="relative">
+                        +33 6 60 05 13 91
+                        <span
+                          className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </a>
+                  </div>
                 </div>
 
                 {/* Response note */}
