@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Section } from "@/components/site/Section";
 import { Reveal } from "@/components/site/Reveal";
@@ -128,6 +128,27 @@ export default function ContactPage() {
                       />
                       <span className="relative">
                         +30 694 966 1859
+                        <span
+                          className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
+                          aria-hidden="true"
+                        />
+                      </span>
+                    </a>
+                    <a
+                      href="https://wa.me/306949661859"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group inline-flex items-center gap-2 text-[var(--foreground)] font-light hover:text-[var(--accent-ink)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm"
+                      style={{ fontSize: "clamp(0.875rem, 0.95vw, 0.95rem)" }}
+                    >
+                      <MessageCircle
+                        size={13}
+                        strokeWidth={1.5}
+                        className="text-[var(--accent)] flex-shrink-0"
+                        aria-hidden="true"
+                      />
+                      <span className="relative">
+                        WhatsApp
                         <span
                           className="absolute -bottom-0.5 left-0 w-0 h-px bg-[var(--accent)] group-hover:w-full transition-all duration-300 ease-out"
                           aria-hidden="true"

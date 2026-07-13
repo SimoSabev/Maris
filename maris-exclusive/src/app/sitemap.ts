@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { listings } from "@/lib/listings";
+import { guides } from "@/lib/guides";
 
 const BASE_URL = "https://www.marisexclusive.com";
 
@@ -50,6 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${BASE_URL}/guides`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: `${BASE_URL}/about`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -70,5 +77,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...listingRoutes];
+  const guideRoutes: MetadataRoute.Sitemap = guides.map((g) => ({
+    url: `${BASE_URL}/guides/${g.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticRoutes, ...listingRoutes, ...guideRoutes];
 }

@@ -19,6 +19,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Yachts for Charter", href: "/yachts-for-charter" },
   { label: "Interior Design", href: "/interior-design" },
   { label: "Locations", href: "/locations" },
+  { label: "Guides", href: "/guides" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
