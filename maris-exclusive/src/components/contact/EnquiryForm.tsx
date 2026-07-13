@@ -131,7 +131,7 @@ function InputField({ id, label, required, error, ...rest }: InputFieldProps) {
         aria-required={required}
         aria-describedby={error ? `${id}-error` : undefined}
         aria-invalid={!!error}
-        className={[INPUT_BASE, "py-3 text-sm"].join(" ")}
+        className={[INPUT_BASE, "py-3 text-base md:text-sm"].join(" ")}
         {...rest}
       />
     </FormField>
@@ -156,7 +156,7 @@ function SelectField({
         aria-invalid={!!error}
         className={[
           INPUT_BASE,
-          "py-3 text-sm appearance-none cursor-pointer",
+          "py-3 text-base md:text-sm appearance-none cursor-pointer",
           "bg-[image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239C8C78' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E\")] bg-no-repeat bg-[right_0.75rem_center] bg-[length:1rem_1rem] pr-9",
         ].join(" ")}
         {...rest}
@@ -182,7 +182,7 @@ function TextareaField({
         aria-required={required}
         aria-describedby={error ? `${id}-error` : undefined}
         aria-invalid={!!error}
-        className={[INPUT_BASE, "py-3 text-sm resize-y min-h-[140px]"].join(
+        className={[INPUT_BASE, "py-3 text-base md:text-sm resize-y min-h-[140px]"].join(
           " "
         )}
         {...rest}
