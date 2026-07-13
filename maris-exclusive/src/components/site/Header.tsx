@@ -3,7 +3,20 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+
+// Routes whose top section is a light/typographic block rather than a dark
+// PageHero image. The header must render in its "solid" (dark-on-light)
+// style immediately on these routes — otherwise the white nav/menu is
+// nearly invisible against the light background until the user scrolls.
+const LIGHT_TOP_ROUTES = ["/guides"];
+
+function hasLightTop(pathname: string): boolean {
+  return LIGHT_TOP_ROUTES.some(
+    (route) => pathname === route || pathname.startsWith(`${route}/`)
+  );
+}
 
 // ─── Nav structure ─────────────────────────────────────────────────────────
 
@@ -27,8 +40,13 @@ const NAV_ITEMS: NavItem[] = [
 // ─── Header ────────────────────────────────────────────────────────────────
 
 export function Header() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  // On routes without a dark hero image, force the solid/dark-on-light
+  // style from the first paint instead of waiting for a scroll event.
+  const solid = scrolled || hasLightTop(pathname ?? "");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80);
@@ -57,7 +75,7 @@ export function Header() {
       <header
         className={[
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
+          solid
             ? "bg-[var(--background)]/92 backdrop-blur-md border-b border-[var(--border)]"
             : "bg-transparent border-b border-transparent",
         ].join(" ")}
@@ -72,14 +90,14 @@ export function Header() {
             aria-label="Maris Exclusive — home"
           >
             <Image
-              src={scrolled ? "/images/brand/maris-logo-dark.png" : "/images/brand/maris-logo-white.png"}
+              src={solid ? "/images/brand/maris-logo-dark.png" : "/images/brand/maris-logo-white.png"}
               alt="Maris Exclusive"
               width={150}
               height={100}
               priority
               className={[
                 "h-[76px] lg:h-[92px] w-auto transition-opacity duration-200",
-                scrolled ? "" : "drop-shadow-sm",
+                solid ? "" : "drop-shadow-sm",
               ].join(" ")}
             />
           </Link>
@@ -95,7 +113,7 @@ export function Header() {
                 href={item.href}
                 className={[
                   "nav-label nav-link-underline transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm",
-                  scrolled
+                  solid
                     ? "text-[var(--muted-fg)] hover:text-[var(--foreground)]"
                     : "text-white/80 hover:text-white drop-shadow-sm",
                 ].join(" ")}
@@ -109,7 +127,7 @@ export function Header() {
           <button
             className={[
               "lg:hidden p-2 -mr-2 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded",
-              scrolled ? "text-[var(--foreground)]" : "text-white",
+              solid ? "text-[var(--foreground)]" : "text-white",
             ].join(" ")}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
