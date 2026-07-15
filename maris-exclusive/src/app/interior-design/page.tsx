@@ -8,9 +8,17 @@ import { ContactCtaBand } from "@/components/site/ContactCtaBand";
 import { ProcessSteps } from "@/components/interior/ProcessSteps";
 
 export const metadata: Metadata = {
-  title: "Interior Design, Renovation & Staging — Maris Exclusive",
+  title: "Interior Design — Luxury Property & Yacht Interiors",
   description:
-    "Turnkey interior design, renovation and staging services which enhance the value of the asset and accelerate sales — tailored to the specific property and yacht, from concept to completion.",
+    "Turnkey luxury interior design, renovation and staging services which enhance the value of the asset and accelerate sales — tailored to the specific property and yacht, from concept to completion.",
+  keywords: [
+    "interior design",
+    "luxury interior design",
+    "yacht interior design",
+    "property staging",
+    "renovation",
+  ],
+  alternates: { canonical: "/interior-design" },
 };
 
 // ─── Offer items ───────────────────────────────────────────────────────────

@@ -10,9 +10,18 @@ import { ContactCtaBand } from "@/components/site/ContactCtaBand";
 // ─── Metadata ──────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: "Properties for Sale — Maris Exclusive",
+  title: "Luxury Real Estate & Villas for Sale",
   description:
-    "An off-market, request-led acquisition service for signature villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and a global network of buyers to achieve the best outcome for all parties involved.",
+    "Buy luxury villas and real estate through an off-market, request-led acquisition service for signature villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and a global network of buyers.",
+  keywords: [
+    "real estate",
+    "luxury real estate",
+    "buy villa",
+    "luxury villa",
+    "villas for sale",
+    "luxury property",
+  ],
+  alternates: { canonical: "/properties-for-sale" },
 };
 
 // ─── Offer points ──────────────────────────────────────────────────────────

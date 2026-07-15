@@ -5,11 +5,21 @@ import { Reveal } from "@/components/site/Reveal";
 import { OfferList } from "@/components/site/OfferList";
 import { ListingGrid } from "@/components/site/ListingGrid";
 import { ContactCtaBand } from "@/components/site/ContactCtaBand";
+import { charterYachts, yachtTitle, yachtMeta } from "@/lib/yachts";
 
 export const metadata: Metadata = {
-  title: "Yachts for Charter — Maris Exclusive",
+  title: "Yacht Charter — Luxury & Mega Yacht Charter",
   description:
-    "Exclusive charters in prime Mediterranean and Middle Eastern cruising locations, with customised itineraries and full-service crewed options. Based between Monaco and Greece.",
+    "Luxury yacht charter and mega yacht charter in prime Mediterranean and Middle Eastern cruising locations, with customised itineraries and full-service crewed options. Based between Monaco and Greece.",
+  keywords: [
+    "yacht charter",
+    "charter yachts",
+    "luxury yacht charter",
+    "mega yacht charter",
+    "superyacht charter",
+    "Mediterranean yacht charter",
+  ],
+  alternates: { canonical: "/yachts-for-charter" },
 };
 
 const offerItems = [
@@ -31,50 +41,12 @@ const offerItems = [
   },
 ];
 
-const listingItems = [
-  {
-    image: "/images/fleet/liquid-sky.jpg",
-    alt: "Liquid Sky superyacht at sea",
-    title: "Liquid Sky — 47m",
-    meta: "47m · 5 cabins · 12 guests · 2017 · Weekly on request",
-  },
-  {
-    image: "/images/fleet/cappuccino-fleet.png",
-    alt: "Cappuccino yacht exterior profile",
-    title: "Cappuccino — 30m",
-    meta: "30m · 5 cabins · 10 guests · 2007 · Weekly on request",
-  },
-  {
-    image: "/images/fleet/triumph.jpg",
-    alt: "Triumph superyacht underway",
-    title: "Triumph — 65m",
-    meta: "65m · 6 cabins · 12 guests · 2021 · Weekly on request",
-  },
-  {
-    image: "/images/fleet/dxb.jpg",
-    alt: "DXB motor yacht profile",
-    title: "DXB — 35m",
-    meta: "35m · 5 cabins · 10 guests · 2003 · Weekly on request",
-  },
-  {
-    image: "/images/fleet/champagne-caviar-fleet.jpg",
-    alt: "Champagne & Caviar yacht aerial profile",
-    title: "Champagne & Caviar — 34m",
-    meta: "34m · 5 cabins · 12 guests · 2004 · Weekly on request",
-  },
-  {
-    image: "/images/fleet/lioness-v.png",
-    alt: "Lioness V superyacht profile",
-    title: "Lioness V — 63m",
-    meta: "63m · 6 cabins · 12 guests · 2006 · Weekly on request",
-  },
-  {
-    image: "/images/cosmico-profile.jpg",
-    alt: "Cosmico motor yacht profile at sea",
-    title: "Cosmico — 40.8m",
-    meta: "40.8m · Motor Yacht · 2024 · Weekly on request",
-  },
-];
+const listingItems = charterYachts().map((yacht) => ({
+  image: yacht.image,
+  alt: yacht.alt,
+  title: yachtTitle(yacht),
+  meta: yachtMeta(yacht),
+}));
 
 export default function YachtsForCharterPage() {
   return (

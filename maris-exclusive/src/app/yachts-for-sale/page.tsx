@@ -5,11 +5,20 @@ import { Reveal } from "@/components/site/Reveal";
 import { OfferList } from "@/components/site/OfferList";
 import { ListingGrid } from "@/components/site/ListingGrid";
 import { ContactCtaBand } from "@/components/site/ContactCtaBand";
+import { saleYachts, yachtTitle, yachtMeta } from "@/lib/yachts";
 
 export const metadata: Metadata = {
-  title: "Yachts for Sale — Maris Exclusive",
+  title: "Yachts for Sale — Luxury Yachts & Superyachts",
   description:
-    "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition. Based between Monaco and Greece.",
+    "A refined portfolio of luxury yachts and superyachts for sale, with expert advice on acquisition, valuation and ownership transition. Based between Monaco and Greece.",
+  keywords: [
+    "yachts for sale",
+    "buy yacht",
+    "luxury yachts for sale",
+    "superyacht for sale",
+    "yacht brokerage",
+  ],
+  alternates: { canonical: "/yachts-for-sale" },
 };
 
 const offerItems = [
@@ -31,50 +40,12 @@ const offerItems = [
   },
 ];
 
-const listingItems = [
-  {
-    image: "/images/cosmico-profile.jpg",
-    alt: "Cosmico motor yacht profile at sea",
-    title: "Cosmico — 40.8m Motor Yacht",
-    meta: "40.8m · Motor Yacht · 2024 · On request",
-  },
-  {
-    image: "/images/deepblue-profile.jpg",
-    alt: "Deep Blue motor yacht at anchor",
-    title: "Deep Blue — 55m Motor Yacht",
-    meta: "55m · Motor Yacht · 2014 · On request",
-  },
-  {
-    image: "/images/yacht-aerial-profile.png",
-    alt: "Aerial view of superyacht profile",
-    title: "Horizon — 55m Superyacht",
-    meta: "55m · Superyacht · 2018 · On request",
-  },
-  {
-    image: "/images/Cappucino-ryi-6.png",
-    alt: "Cappucino yacht profile along the coast",
-    title: "Cappucino — 38m Motor Yacht",
-    meta: "38m · Motor Yacht · 2019 · On request",
-  },
-  {
-    image: "/images/Cappucino-ryi-3.png",
-    alt: "Cappucino yacht exterior view",
-    title: "Azzurra — 34m Motor Yacht",
-    meta: "34m · Motor Yacht · 2021 · On request",
-  },
-  {
-    image: "/images/DJI_0175.jpg",
-    alt: "Drone view of yacht underway",
-    title: "Levante — 48m Motor Yacht",
-    meta: "48m · Motor Yacht · 2017 · On request",
-  },
-  {
-    image: "/images/DJI_0356.jpg",
-    alt: "Aerial profile of yacht at sea",
-    title: "Sirocco — 36m Motor Yacht",
-    meta: "36m · Motor Yacht · 2022 · On request",
-  },
-];
+const listingItems = saleYachts().map((yacht) => ({
+  image: yacht.image,
+  alt: yacht.alt,
+  title: yachtTitle(yacht),
+  meta: yachtMeta(yacht),
+}));
 
 export default function YachtsForSalePage() {
   return (

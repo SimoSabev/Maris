@@ -39,8 +39,8 @@ const SERVICES: Service[] = [
     description:
       "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition.",
     href: "/yachts-for-sale",
-    image: "/images/cosmico-side-profile.jpg",
-    alt: "Cosmico motor yacht profile at sea",
+    image: "/images/deepblue-profile.jpg",
+    alt: "Deep Blue motor yacht at anchor",
   },
   {
     title: "Yachts for Charter",
