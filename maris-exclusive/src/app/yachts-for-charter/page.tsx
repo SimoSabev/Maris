@@ -33,40 +33,46 @@ const offerItems = [
 
 const listingItems = [
   {
-    image: "/images/yacht-deck-sun.jpg",
-    alt: "Sun-drenched yacht deck in the Mediterranean",
-    title: "Cappucino — Côte d'Azur",
-    meta: "Côte d'Azur · 10 guests · Weekly from €X on request",
+    image: "/images/fleet/liquid-sky.jpg",
+    alt: "Liquid Sky superyacht at sea",
+    title: "Liquid Sky — 47m",
+    meta: "47m · 5 cabins · 12 guests · 2017 · Weekly on request",
   },
   {
-    image: "/images/Cappucino-ryi-5.png",
-    alt: "Cappucino yacht exterior profile",
-    title: "Cappucino — Greek Isles",
-    meta: "Greece · 10 guests · Weekly from €X on request",
+    image: "/images/fleet/cappuccino-fleet.png",
+    alt: "Cappuccino yacht exterior profile",
+    title: "Cappuccino — 30m",
+    meta: "30m · 5 cabins · 10 guests · 2007 · Weekly on request",
   },
   {
-    image: "/images/yacht-interior-dusk.png",
-    alt: "Luxury yacht interior at dusk",
-    title: "Horizon — Montenegro & Adriatic",
-    meta: "Adriatic · 12 guests · Weekly from €X on request",
+    image: "/images/fleet/triumph.jpg",
+    alt: "Triumph superyacht underway",
+    title: "Triumph — 65m",
+    meta: "65m · 6 cabins · 12 guests · 2021 · Weekly on request",
   },
   {
-    image: "/images/Cappucino-ryi-7.png",
-    alt: "Cappucino yacht profile at anchor",
-    title: "Azzurra — Amalfi & Capri",
-    meta: "Amalfi · 8 guests · Weekly from €X on request",
+    image: "/images/fleet/dxb.jpg",
+    alt: "DXB motor yacht profile",
+    title: "DXB — 35m",
+    meta: "35m · 5 cabins · 10 guests · 2003 · Weekly on request",
   },
   {
-    image: "/images/DJI_0204-c.jpg",
-    alt: "Aerial drone view of charter yacht underway",
-    title: "Levante — Turkey & Aegean",
-    meta: "Aegean · 10 guests · Weekly from €X on request",
+    image: "/images/fleet/champagne-caviar-fleet.jpg",
+    alt: "Champagne & Caviar yacht aerial profile",
+    title: "Champagne & Caviar — 34m",
+    meta: "34m · 5 cabins · 12 guests · 2004 · Weekly on request",
   },
   {
-    image: "/images/DJI_0300.jpg",
-    alt: "Drone profile of superyacht at sea",
-    title: "Sirocco — Arabian Gulf",
-    meta: "Dubai · 12 guests · Weekly from €X on request",
+    image: "/images/fleet/lioness-v.png",
+    alt: "Lioness V superyacht profile",
+    title: "Lioness V — 63m",
+    meta: "63m · 6 cabins · 12 guests · 2006 · Weekly on request",
+  },
+  {
+    image: "/images/cosmico-profile.jpg",
+    alt: "Cosmico motor yacht profile at sea",
+    title: "Cosmico — 40.8m",
+    meta: "40.8m · Motor Yacht · 2024 · Weekly on request",
   },
 ];
 
@@ -134,6 +140,7 @@ export default function YachtsForCharterPage() {
           <ListingGrid
             items={listingItems}
             note="Selected charter representation · full fleet available on private enquiry"
+            noteFontSize="1.1rem"
           />
         </Section>
 

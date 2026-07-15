@@ -26,6 +26,8 @@ type ListingGridProps = {
   items: ListingItem[];
   /** Caption shown below the grid */
   note?: string;
+  /** Override the caption's font size, e.g. "3rem". Applied inline — .nav-label's font-size wins over a Tailwind class at equal specificity, so a class override alone won't render. */
+  noteFontSize?: string;
 };
 
 const DEFAULT_NOTE =
@@ -122,7 +124,11 @@ function ListingCard({
   );
 }
 
-export function ListingGrid({ items, note = DEFAULT_NOTE }: ListingGridProps) {
+export function ListingGrid({
+  items,
+  note = DEFAULT_NOTE,
+  noteFontSize,
+}: ListingGridProps) {
   const shouldReduceMotion = useReducedMotion();
 
   return (
@@ -139,7 +145,10 @@ export function ListingGrid({ items, note = DEFAULT_NOTE }: ListingGridProps) {
       </div>
 
       {/* Caption */}
-      <p className="nav-label text-[var(--muted-fg)] text-[0.58rem] text-center border-t border-[var(--border)] pt-6">
+      <p
+        className="nav-label text-[var(--muted-fg)] text-center border-t border-[var(--border)] pt-6"
+        style={{ fontSize: noteFontSize ?? "0.58rem" }}
+      >
         {note}
       </p>
     </div>
