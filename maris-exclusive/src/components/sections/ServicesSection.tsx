@@ -39,7 +39,7 @@ const SERVICES: Service[] = [
     description:
       "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition.",
     href: "/yachts-for-sale",
-    image: "/images/fleet/maltese-falcon-sk.jpg",
+    image: "/images/yacht-deck-sun.jpg",
     alt: "Maltese Falcon 88m sailing yacht under full sail",
   },
   {
@@ -47,7 +47,7 @@ const SERVICES: Service[] = [
     description:
       "Exclusive charters in prime Mediterranean and Middle Eastern cruising locations, customised itineraries and full-service crewed options.",
     href: "/yachts-for-charter",
-    image: "/images/yacht-deck-sun.jpg",
+    image: "/images/fleet/maltese-falcon-sk.jpg",
     alt: "Yacht deck bathed in sunlight",
   },
   {
