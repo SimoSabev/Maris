@@ -23,8 +23,8 @@ const SERVICES: Service[] = [
     description:
       "An off-market, request-led acquisition service for villas, apartments, chalets and estates in premier coastal, city and mountain locations. Access to a selective database of properties and to a global network of buyers and sellers, introduced privately and matched precisely to each brief.",
     href: "/properties-for-sale",
-    image: "/images/properties/chalet-crystal-spa.jpg",
-    alt: "Chalet Crystal private spa with infinity pool",
+    image: "/images/properties/chalet-nordea-pool.jpg",
+    alt: "Chalet Nordéa indoor pool with panoramic snow-covered alpine lake view",
   },
   {
     title: "Properties for Rent",
@@ -39,8 +39,8 @@ const SERVICES: Service[] = [
     description:
       "A refined portfolio of luxury yachts and superyachts, with expert advice on acquisition, valuation and ownership transition.",
     href: "/yachts-for-sale",
-    image: "/images/deepblue-profile.jpg",
-    alt: "Deep Blue motor yacht at anchor",
+    image: "/images/fleet/maltese-falcon-sk.jpg",
+    alt: "Maltese Falcon 88m sailing yacht under full sail",
   },
   {
     title: "Yachts for Charter",
