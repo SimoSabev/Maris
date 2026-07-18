@@ -179,7 +179,13 @@ export function Header() {
           </button>
 
           {/* Wordmark in sheet */}
-          <p className="nav-label text-[var(--accent)] mb-10">Maris Exclusive</p>
+          <Link
+            href="/"
+            className="nav-label text-[var(--accent)] mb-10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[var(--accent)] rounded-sm"
+            onClick={() => setMobileOpen(false)}
+          >
+            Maris Exclusive
+          </Link>
 
           <ul className="flex flex-col gap-1" role="list">
             {NAV_ITEMS.map((item) => (
